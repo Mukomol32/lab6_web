@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>lab6</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>
+                <span data-section="first">#1</span>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <div class="slider">Slider</div>
+                    <div class="dropdown-content">
+                        <a href="#slider">Slide1</a>
+                        <a href="#slider/Slide2">Slide2</a>
+                        <a href="#slider/Slide3">Slide3</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span data-section="third">#3</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="fullpage">
+
+        <div data-index="0" data-anchor="first" class="section">
+            <div class="bg" style="background-image: url(img/first.jpg)"></div>
+            <div class="content">
+                <h2 class="title">#1</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fuga enim molestias tempora aperiam ducimus, molestiae amet sunt debitis, et quidem. Itaque cumque saepe labore cupiditate et aliquam, similique minima?</p>
+            </div>
+        </div>
+
+        <div data-index="1" class="section" data-anchor="slider" id="section2">
+
+            <div class="slide" data-anchor="slider">
+                <div class="bg" style="background-image: url(img/second.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">first</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi possimus ullam? Pariatur iure, maiores esse culpa, dolorem vel facere voluptatem quidem odit tenetur perspiciatis perferendis, odio dignissimos blanditiis vitae!</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Slide2">
+                <div class="bg" id="bg2" style="background-image: url(img/third.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">second</h2>
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis perspiciatis exercitationem praesentium sit laborum quisquam delectus obcaecati illo a esse omnis iste veniam voluptatum placeat error nostrum, fuga quo!</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Slide3">
+                <div class="bg" id="bg3" style="background-image: url(img/forth.jpg) "></div>
+                <div class="content">
+                    <h2 class="title">third</h2>
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nulla deserunt perspiciatis voluptates nisi. Modi explicabo a eveniet porro numquam, consectetur voluptate natus, maxime culpa adipisci, beatae quae inventore necessitatibus.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-index="2" data-anchor="third" class="section">
+            <div class="bg" style="background-image: url(img/fifth.jpg)"></div>
+            <div class="content">
+                <h2 class="title">#3</h2>
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi maiores voluptatum at expedita illo, facilis sapiente culpa, eos nemo, corporis laborum quod autem unde cum. Repellendus sapiente earum veniam voluptatibus?</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
